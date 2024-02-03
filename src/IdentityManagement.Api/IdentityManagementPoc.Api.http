@@ -1,0 +1,6 @@
+@IdentityManagementPoc.Api_HostAddress = http://localhost:9999
+
+GET {{IdentityManagementPoc.Api_HostAddress}}/api/test
+Accept: application/json
+
+###
