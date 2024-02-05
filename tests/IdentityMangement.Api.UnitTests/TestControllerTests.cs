@@ -25,8 +25,7 @@ public class TestControllerTests
         var result = actionResult.Result as OkObjectResult;
 
         // assert
-        Assert.IsType<ActionResult<string>>(result);
-        Assert.Equal((int)HttpStatusCode.OK, result.StatusCode);
-        Assert.Equal(expected, result.Value);
+        Assert.Equal((int)HttpStatusCode.OK, result?.StatusCode);
+        Assert.Equal(expected, result?.Value);
     }
 }
