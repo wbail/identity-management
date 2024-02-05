@@ -4,11 +4,11 @@ namespace IdentityManagementPoc.Api;
 
 [ApiController]
 [Route("api/[controller]")]
-public class TestController : ControllerBase
+public class TestsController : ControllerBase
 {
     [HttpGet]
     public ActionResult<string> Get()
     {
-        return "test";
+        return Ok("test");
     }
 }
